@@ -1,18 +1,20 @@
 package com.dalendev.meteotn.jaxb.adapter;
 
+import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.time.LocalDateTime;
 
 /**
  * @author daniele.orler
  */
-public class LocalDateTimeAdapter {
+public class LocalDateTimeAdapter extends XmlAdapter<String, LocalDateTime> {
 
-    public static LocalDateTime unmarshal(String v) {
+    @Override
+    public LocalDateTime unmarshal(String v) throws Exception {
         return LocalDateTime.parse(v);
     }
 
-    public static String marshal(LocalDateTime v) {
+    @Override
+    public String marshal(LocalDateTime v) throws Exception {
         return v.toString();
     }
-
 }

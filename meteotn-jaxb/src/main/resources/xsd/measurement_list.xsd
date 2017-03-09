@@ -31,18 +31,6 @@ THE SOFTWARE.
            attributeFormDefault="unqualified"
            elementFormDefault="qualified"
            jaxb:version="2.1">
-    
-    <xs:annotation>
-        <xs:appinfo>
-            <jaxb:globalBindings>
-                <jaxb:javaType
-                        name="java.time.LocalDateTime"
-                        xmlType="xs:dateTime"
-                        parseMethod="com.dalendev.meteotn.jaxb.adapter.LocalDateTimeAdapter.unmarshal"
-                        printMethod="com.dalendev.meteotn.jaxb.adapter.LocalDateTimeAdapter.marshal" />
-            </jaxb:globalBindings> 
-        </xs:appinfo>
-    </xs:annotation>
 
     <xs:element name="datiOggi" type="measurementListType" />
     

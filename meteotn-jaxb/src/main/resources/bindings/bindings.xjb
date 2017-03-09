@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc" xmlns="http://java.sun.com/xml/ns/jaxws"
+               jaxb:extensionBindingPrefixes="xjc" jaxb:version="2.1">
+    <jaxb:bindings>
+        <jaxb:globalBindings>
+            <xjc:javaType
+                    name="java.time.LocalDateTime"
+                    xmlType="xs:dateTime"
+                    adapter="com.dalendev.meteotn.jaxb.adapter.LocalDateTimeAdapter" />
+            <xjc:javaType
+                    name="java.time.LocalDate"
+                    xmlType="xs:date"
+                    adapter="com.dalendev.meteotn.jaxb.adapter.LocalDateAdapter" />
+        </jaxb:globalBindings>
+    </jaxb:bindings>
+<!--    <jaxb:bindings schemaLocation="../xsd/station_list.xsd" node="/xs:schema" >
+        <jaxb:globalBindings>
+            <xjc:javaType
+                    name="java.time.LocalDate"
+                    xmlType="xs:date"
+                    adapter="com.dalendev.meteotn.jaxb.adapter.LocalDateAdapter" />
+        </jaxb:globalBindings>
+    </jaxb:bindings>-->
+</jaxb:bindings>

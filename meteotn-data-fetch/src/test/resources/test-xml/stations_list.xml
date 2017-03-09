@@ -1,0 +1,40 @@
+<ArrayOfAnagrafica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.meteotrentino.it/">
+    <anagrafica>...</anagrafica>
+    <anagrafica>...</anagrafica>
+    <anagrafica>
+        <codice>T0153</codice>
+        <nome>Ala (Ronchi)</nome>
+        <nomebreve>SM Ala Ronchi</nomebreve>
+        <quota>692</quota>
+        <latitudine>45.73923692</latitudine>
+        <longitudine>11.06535547</longitudine>
+        <est>660674</est>
+        <north>5067150</north>
+        <inizio>01/08/1927</inizio>
+        <fine/>
+    </anagrafica>
+    <anagrafica>
+        <codice>T0146</codice>
+        <nome>Aldeno (San Zeno)</nome>
+        <nomebreve>SM Aldeno San Zeno</nomebreve>
+        <quota>182</quota>
+        <latitudine>45.96782575</latitudine>
+        <longitudine>11.09174056</longitudine>
+        <est>662061</est>
+        <north>5092600</north>
+        <inizio>01/11/1923</inizio>
+        <fine/>
+    </anagrafica>
+    <anagrafica>
+        <codice>T0192</codice>
+        <nome>Arco</nome>
+        <nomebreve>Arco</nomebreve>
+        <quota>91</quota>
+        <latitudine>45.92256083</latitudine>
+        <longitudine>10.89093781</longitudine>
+        <est>646623</est>
+        <north>5087182</north>
+        <inizio>18/07/1985</inizio>
+        <fine>10/02/2005</fine>
+    </anagrafica>
+</ArrayOfAnagrafica>

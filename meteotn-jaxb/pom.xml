@@ -26,6 +26,7 @@
                         <configuration>
                             <schemaDirectory>src/main/resources/xsd</schemaDirectory>
                             <generatePackage>${project.groupId}.meteotn.jaxb.generated</generatePackage>
+                            <bindingDirectory>src/main/resources/bindings</bindingDirectory>
                             <locale>en</locale>
                         </configuration>
                     </execution>
