@@ -13,12 +13,12 @@ public class TaskQueueTest {
 
     @Test
     public void testQueue() {
-        TaskQueue.getInstance().add(new Task(Task.Type.READ_STATION_DATA, "url"));
-        TaskQueue.getInstance().add(new Task(Task.Type.UPDATE_STATION_LIST, "url"));
+        TaskQueue.add(new Task(Task.Type.READ_STATION_DATA, "url"));
+        TaskQueue.add(new Task(Task.Type.UPDATE_STATION_LIST, "url"));
 
-        assertEquals(TaskQueue.getInstance().remove().getType(), Task.Type.READ_STATION_DATA);
-        assertEquals(TaskQueue.getInstance().remove().getType(), Task.Type.UPDATE_STATION_LIST);
-        assertEquals(0, TaskQueue.getInstance().size());
+        assertEquals(TaskQueue.remove().getType(), Task.Type.READ_STATION_DATA);
+        assertEquals(TaskQueue.remove().getType(), Task.Type.UPDATE_STATION_LIST);
+        assertEquals(0, TaskQueue.size());
     }
 
 }

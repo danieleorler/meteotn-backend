@@ -1,6 +1,5 @@
 package com.dalendev.meteotn.datafetch.worker;
 
-import com.dalendev.meteotn.datafetch.worker.StationWorker;
 import com.dalendev.meteotn.model.Task;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -11,9 +10,8 @@ import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import static org.junit.Assert.assertEquals;
 import static org.mockserver.integration.ClientAndServer.startClientAndServer;
-
-import static org.junit.Assert.*;
 import static org.mockserver.model.HttpRequest.request;
 import static org.mockserver.model.HttpResponse.response;
 
@@ -46,7 +44,9 @@ public class StationWorkerTest {
 
         Task task = new Task(Task.Type.UPDATE_STATION_LIST, "http://localhost:1080/service.asmx/listaStazioni");
 
-        Integer result = StationWorker.execute(task);
+        StationWorker stationWorker = new StationWorker();
+
+        Integer result = stationWorker.execute(task);
 
         assertEquals(new Integer(3), result);
     }
