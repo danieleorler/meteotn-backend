@@ -1,4 +1,4 @@
-package com.dalendev.meteotn.worker;
+package com.dalendev.meteotn.datafetch.worker;
 
 import com.dalendev.meteotn.jaxb.generated.WeatherStation;
 import com.dalendev.meteotn.jaxb.generated.WeatherStationList;

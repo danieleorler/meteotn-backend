@@ -1,4 +1,4 @@
-package com.dalendev.meteotn.worker;
+package com.dalendev.meteotn.datafetch.worker;
 
 /**
  * @author daniele.orler

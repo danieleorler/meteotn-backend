@@ -1,4 +1,4 @@
-package com.dalendev.meteotn.process;
+package com.dalendev.meteotn.datafetch.process;
 
 import com.dalendev.meteotn.model.Task;
 

@@ -1,5 +1,6 @@
-package com.dalendev.meteotn.process;
+package com.dalendev.meteotn.datafetch.process;
 
+import com.dalendev.meteotn.datafetch.process.TaskQueue;
 import com.dalendev.meteotn.model.Task;
 import org.junit.Test;
 

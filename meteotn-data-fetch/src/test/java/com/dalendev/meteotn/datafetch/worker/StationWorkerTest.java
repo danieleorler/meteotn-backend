@@ -1,5 +1,6 @@
-package com.dalendev.meteotn.worker;
+package com.dalendev.meteotn.datafetch.worker;
 
+import com.dalendev.meteotn.datafetch.worker.StationWorker;
 import com.dalendev.meteotn.model.Task;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
