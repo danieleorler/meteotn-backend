@@ -1,6 +1,28 @@
 <ArrayOfAnagrafica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.meteotrentino.it/">
-    <anagrafica>...</anagrafica>
-    <anagrafica>...</anagrafica>
+    <anagrafica>
+        <codice>T0154</codice>
+        <nome>Ala (Convento)</nome>
+        <nomebreve>Ala Convento</nomebreve>
+        <quota>165</quota>
+        <latitudine>45.75711703</latitudine>
+        <longitudine>10.99987083</longitudine>
+        <est>655530</est>
+        <north>5069007</north>
+        <inizio>01/01/1921</inizio>
+        <fine>22/06/2005</fine>
+    </anagrafica>
+    <anagrafica>
+        <codice>T0405</codice>
+        <nome>Ala (Maso Le Pozze)</nome>
+        <nomebreve>SM Ala Maso Le Pozze</nomebreve>
+        <quota>170</quota>
+        <latitudine>45.78613814</latitudine>
+        <longitudine>11.02374457</longitudine>
+        <est>657305</est>
+        <north>5072278</north>
+        <inizio>17/05/2012</inizio>
+        <fine/>
+    </anagrafica>
     <anagrafica>
         <codice>T0153</codice>
         <nome>Ala (Ronchi)</nome>

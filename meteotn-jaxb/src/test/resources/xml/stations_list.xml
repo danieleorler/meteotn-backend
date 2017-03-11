@@ -1,0 +1,62 @@
+<ArrayOfAnagrafica xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.meteotrentino.it/">
+    <anagrafica>
+        <codice>T0154</codice>
+        <nome>Ala (Convento)</nome>
+        <nomebreve>Ala Convento</nomebreve>
+        <quota>165</quota>
+        <latitudine>45.75711703</latitudine>
+        <longitudine>10.99987083</longitudine>
+        <est>655530</est>
+        <north>5069007</north>
+        <inizio>01/01/1921</inizio>
+        <fine>22/06/2005</fine>
+    </anagrafica>
+    <anagrafica>
+        <codice>T0405</codice>
+        <nome>Ala (Maso Le Pozze)</nome>
+        <nomebreve>SM Ala Maso Le Pozze</nomebreve>
+        <quota>170</quota>
+        <latitudine>45.78613814</latitudine>
+        <longitudine>11.02374457</longitudine>
+        <est>657305</est>
+        <north>5072278</north>
+        <inizio>17/05/2012</inizio>
+        <fine/>
+    </anagrafica>
+    <anagrafica>
+        <codice>T0153</codice>
+        <nome>Ala (Ronchi)</nome>
+        <nomebreve>SM Ala Ronchi</nomebreve>
+        <quota>692</quota>
+        <latitudine>45.73923692</latitudine>
+        <longitudine>11.06535547</longitudine>
+        <est>660674</est>
+        <north>5067150</north>
+        <inizio>01/08/1927</inizio>
+        <fine/>
+    </anagrafica>
+    <anagrafica>
+        <codice>T0146</codice>
+        <nome>Aldeno (San Zeno)</nome>
+        <nomebreve>SM Aldeno San Zeno</nomebreve>
+        <quota>182</quota>
+        <latitudine>45.96782575</latitudine>
+        <longitudine>11.09174056</longitudine>
+        <est>662061</est>
+        <north>5092600</north>
+        <inizio>01/11/1923</inizio>
+        <fine/>
+    </anagrafica>
+    <anagrafica>
+        <codice>T0192</codice>
+        <nome>Arco</nome>
+        <nomebreve>Arco</nomebreve>
+        <quota>91</quota>
+        <latitudine>45.92256083</latitudine>
+        <longitudine>10.89093781</longitudine>
+        <est>646623</est>
+        <north>5087182</north>
+        <inizio>18/07/1985</inizio>
+        <fine>10/02/2005</fine>
+    </anagrafica>
+</ArrayOfAnagrafica>
