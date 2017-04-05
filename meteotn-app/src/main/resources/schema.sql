@@ -1,0 +1,13 @@
+--DROP TABLE IF EXISTS station;
+--CREATE TABLE station(
+--    id INT NOT NULL AUTO_INCREMENT,
+--    code VARCHAR(20) NOT NULL,
+--    name VARCHAR(255),
+--    shortName VARCHAR(50),
+--    altitude INT,
+--    latitude FLOAT,
+--    longitude FLOAT,
+--    lastUpdate INT,
+--    PRIMARY KEY (id),
+--    UNIQUE KEY station_code_UNIQUE (code)
+--);

@@ -20,7 +20,7 @@ public class TaskExecutor {
     @Autowired
     private StationWorker stationWorker;
 
-    @Scheduled(initialDelay = 10000, fixedRate = 5000)
+    @Scheduled(initialDelay = 10000, fixedDelay = 5000)
     public void executeTask() {
 
         if(!TaskQueue.isEmpty()) {

@@ -23,8 +23,8 @@ public class UnmarshallingTest {
         WeatherStationList result = UnmarshalHelper.unmarshal(stationsXML, WeatherStationList.class);
 
         assertEquals(5, result.getStationList().size());
-        assertEquals(LocalDate.parse("1921-01-01"), result.getStationList().get(0).getFrom());
-        assertEquals(LocalDate.parse("2005-06-22"), result.getStationList().get(0).getTo());
+        assertEquals(LocalDate.parse("1921-01-01"), result.getStationList().get(0).getActiveFrom());
+        assertEquals(LocalDate.parse("2005-06-22"), result.getStationList().get(0).getActiveUntil());
     }
 
 }

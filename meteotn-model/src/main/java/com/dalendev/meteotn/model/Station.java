@@ -2,20 +2,32 @@ package com.dalendev.meteotn.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import javax.persistence.*;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 /**
  * @author daniele.orler
  */
+@Entity
+@Table(name = "station")
 public class Station {
 
     @JsonIgnore
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    @Column(nullable = false, unique = true)
     private final String code;
     private String name;
     private String shortName;
     private Integer altitude;
     private Float latitude;
     private Float longitude;
-    private Long lastUpdate;
+    private LocalDate activeFrom;
+    private LocalDate activeUntil;
+    private LocalDateTime lastUpdate;
 
     public Station(String code) {
         this.code = code;
@@ -73,11 +85,27 @@ public class Station {
         this.longitude = longitude;
     }
 
-    public long getLastUpdate() {
+    public LocalDate getActiveFrom() {
+        return activeFrom;
+    }
+
+    public void setActiveFrom(LocalDate activeFrom) {
+        this.activeFrom = activeFrom;
+    }
+
+    public LocalDate getActiveUntil() {
+        return activeUntil;
+    }
+
+    public void setActiveUntil(LocalDate activeUntil) {
+        this.activeUntil = activeUntil;
+    }
+
+    public LocalDateTime getLastUpdate() {
         return lastUpdate;
     }
 
-    public void setLastUpdate(long lastUpdate) {
+    public void setLastUpdate(LocalDateTime lastUpdate) {
         this.lastUpdate = lastUpdate;
     }
 
@@ -126,6 +154,16 @@ public class Station {
 
         public Builder withLongitude(Float longitude) {
             station.setLongitude(longitude);
+            return this;
+        }
+
+        public Builder withActiveFrom(LocalDate from) {
+            station.setActiveFrom(from);
+            return this;
+        }
+
+        public Builder withActiveUntil(LocalDate to) {
+            station.setActiveUntil(to);
             return this;
         }
 

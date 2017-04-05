@@ -2,7 +2,7 @@
 <!--
 The MIT License
 
-Copyright 2015 danieleorler.
+Copyright 2017 danieleorler.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -118,14 +118,14 @@ THE SOFTWARE.
             <xs:element name="inizio" type="xs:date">
                 <xs:annotation>
                     <xs:appinfo>
-                        <jaxb:property name="from"/>
+                        <jaxb:property name="activeFrom"/>
                     </xs:appinfo>
                 </xs:annotation>
             </xs:element>
             <xs:element name="fine" type="xs:date">
                 <xs:annotation>
                     <xs:appinfo>
-                        <jaxb:property name="to"/>
+                        <jaxb:property name="activeUntil"/>
                     </xs:appinfo>
                 </xs:annotation>
             </xs:element>
